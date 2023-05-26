@@ -87,6 +87,8 @@ GEM
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    dockerfile-rails (1.4.0)
+      rails
     erubi (1.12.0)
     faker (3.2.0)
       i18n (>= 1.8.11, < 2)
@@ -129,6 +131,9 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.2-x64-mingw32)
       racc (~> 1.4)
+    nokogiri (1.15.2-x86_64-linux)
+      racc (~> 1.4)
+    pg (1.5.3)
     pg (1.5.3-x64-mingw32)
     public_suffix (5.0.1)
     puma (5.6.5)
@@ -211,11 +216,13 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
   capybara
   debug
+  dockerfile-rails (>= 1.4)
   faker (~> 3.0)
   importmap-rails
   jbuilder
@@ -234,4 +241,4 @@ RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.4.13
+   2.3.14
